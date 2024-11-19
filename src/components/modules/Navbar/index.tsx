@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
    
-      <div className="flex justify-between md:gap-[0.875rem] lg:gap-[2.875rem] xl:gap-[13.875rem] items-center md:px-0 
+      <nav className="flex justify-between md:gap-[0.875rem] lg:gap-[2.875rem] xl:gap-[13.875rem] items-center md:px-0 
      relative z-10 
       ">
         {/* Logo */}
@@ -63,7 +63,7 @@ const Navbar = () => {
             </span>
           </div>
         )}
-      </div>
+      </nav>
 
   );
 };
