@@ -5,6 +5,8 @@ import Navbar from '../components/modules/Navbar/index'
 import Hero from '../components/modules/HeroSection/index'
 import CategoryServices from '../components/modules/CategoryServices/index'
 import Destinations from '../components/modules/Destinations/index'
+import Companies from '../components/modules/Companies/index'
+import Subscribe from '../components/modules/Subscribe/index'
 
 const Landing = () => {
     return (
@@ -14,8 +16,7 @@ const Landing = () => {
                     <Navbar />
                 </NavLayout>
 
-                <img src="./Decore.svg" alt="" className="
-           h-[42.53rem] w[38.89rem]
+                <img src="./Decore.svg" alt="" className="h-[42.53rem] w[38.89rem]
            absolute right-0 -top-12 hidden xl:block" />
             </div>
 
@@ -24,6 +25,8 @@ const Landing = () => {
                     <Hero />
                     <CategoryServices />
                     <Destinations />
+                    <Companies />
+                    <Subscribe />
                 </AppLayout>
             </div>
 

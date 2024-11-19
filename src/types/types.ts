@@ -10,3 +10,8 @@ export type destinationCardTypes = {
   Image: string;
   Trip : string;
 };
+
+export type companiesImagesTypes = {
+  companyImage: string;
+
+};

@@ -25,7 +25,7 @@ const Destinations = () => {
 
             </div>
 
-            <img src="./spring.svg" alt="" className='hidden xl:block absolute right-9 bottom-16 ' />
+            <img src="./spring.svg" alt="" className='hidden xl:block absolute right-[4rem] bottom-16 ' />
         </div>
     )
 }
