@@ -2,6 +2,7 @@ import {
   servicesCardTypes,
   destinationCardTypes,
   companiesImagesTypes,
+  bookingCardTypes
 } from "../types/types";
 
 export const servicesCard: servicesCardTypes[] = [
@@ -65,4 +66,22 @@ export const companiesImages: companiesImagesTypes[] = [
   {
     companyImage: "./litalia.svg",
   },
+];
+
+export const bookingCard: bookingCardTypes[] = [
+  {
+    title: "Choose Destination",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. ",
+    iconImage: "./yellow-icon.svg",
+  },
+  {
+    title: "Make Payment",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. ",
+    iconImage: "./orange-icon.svg",
+  },
+  {
+    title: "Reach Airport on Selected Date",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. ",
+    iconImage: "./green-icon.svg",
+  }
 ];

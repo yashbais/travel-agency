@@ -8,6 +8,7 @@ import Destinations from '../components/modules/Destinations/index'
 import Companies from '../components/modules/Companies/index'
 import Subscribe from '../components/modules/Subscribe/index'
 import Footer from '../components/modules/Footer/index'
+import Booking from '../components/modules/Booking/index'
 
 const Landing = () => {
     return (
@@ -26,6 +27,7 @@ const Landing = () => {
                     <Hero />
                     <CategoryServices />
                     <Destinations />
+                    <Booking />
                     <Companies />
                     <Subscribe />
                     <Footer />
