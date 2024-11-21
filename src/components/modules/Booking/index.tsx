@@ -7,13 +7,13 @@ import { Icon } from '@iconify/react'
 
 const Booking = () => {
     return (
-        <div className='xl:mx-[4.625rem] mt-[186px] grid lg:grid-cols-12 gap-1 grid-cols-1' >
-            <div className='lg:col-span-7 '>
+        <div className='xl:mx-[4.625rem] mt-[186px] grid lg:grid-cols-12 gap-10 md:gap-1 grid-cols-1' >
+            <div className='lg:col-span-7 grid md:place-items-start place-items-center '>
                 <p className='text-[#5E6282] font-poppins font-semibold text-lg leading-7'>Easy and Fast</p>
-                <p className='mt-[15px] font-volkhov font-bold text-[50px] text-[#14183E] w-[511px] leading-[64.5px]'>Book your next trip
+                <p className='mt-[15px] font-volkhov font-bold  text-2xl md:text-[50px] text-[#14183E] md:w-[511px] md:leading-[64.5px]'>Book your next trip
                     in 3 easy steps</p>
 
-                <div className='mt-[31px] flex flex-col gap-[48px]'>
+                <div className='mt-[31px] flex flex-col md:gap-[48px] gap-[30px]'>
                     {bookingCard.map((e) => {
                         return (
                             <BookingCard {...e} />
@@ -21,22 +21,21 @@ const Booking = () => {
                     })}
                 </div>
             </div>
-            <div className='lg:col-span-5 relative'>
-                <img src={BlurryEffect} alt="" className='min-w-[554px] min-h-[567px] absolute -right-20 -top-28  ' />
-
-                <div className='min-w-[370px] min-h-[400px] rounded-[24px] shadow-md absolute z-10 bg-[#FFFFFF] right-28 top-16 flex flex-col gap-[26px] px-[25px] py-[20px] items-center'>
+            <div className='lg:col-span-5 relative  min-h-[520px] lg:min-h-full grid place-items-center '>
+                <img src={BlurryEffect} alt="" className='min-w-[554px] min-h-[567px] hidden lg:block lg:absolute lg:-right-20 lg:-top-28  ' />
+                <div className=' lg:min-w-[370px] min-h-[400px] rounded-[24px] shadow-md absolute z-10 bg-[#FFFFFF]  lg:right-28 lg:top-16 flex flex-col gap-[26px] px-[25px] py-[20px] items-center'>
                     <img src={rome} alt="" />
 
-                    <div className=' w-full justify-between'>
+                    <div className=' lg:w-full justify-between'>
                         <div className='flex flex-col gap-[13px]'>
-                            <p className='text-[#080809] font-poppins font-medium text-lg'>Trip To Greece</p>
-                            <div className='text-[#84829A] flex text-[16px] font-poppins font-medium gap-1'>
+                            <p className='text-[#080809] font-poppins font-medium text-sm md:text-lg'>Trip To Greece</p>
+                            <div className='text-[#84829A] flex  text-sm md:text-[16px] font-poppins font-medium gap-1'>
                                 <p >14-29 June</p>
-                                <span className='h-[16px] min-w-1'>1</span>
+                                <span className='h-[16px] min-w-1 md:block hidden'>1</span>
                                 <p>by Robbin joseph</p>
                             </div>
                         </div>
-                        <div className='flex gap-[18px] mt-[21px]'>
+                        <div className='flex  gap-[18px] mt-[21px]'>
                             <div className='bg-[#F5F5F5] p-3 rounded-full'><Icon icon="mdi:leaf" width="1.2rem" height="1.2rem" style={{ color: "#84829A" }} /></div>
                             <div className='bg-[#F5F5F5] p-3  rounded-full'><Icon icon="tabler:map" width="1.2rem" height="1.2rem" style={{ color: "#84829A" }} /></div>
                             <div className='bg-[#F5F5F5] p-3  rounded-full'><Icon icon="mynaui:send-solid" width="1.2rem" height="1.2rem" style={{ color: "#84829A" }} /></div>
@@ -45,7 +44,7 @@ const Booking = () => {
                             <div className='flex gap-[15px]'>
                                 <Icon icon="pixelarticons:buildings" width="1.2rem" height="1.2rem" style={{ color: "#84829A" }} />
 
-                                <p className='font-poppins font-medium text-[16px] text-[#84829A]'>24 people going</p>
+                                <p className='font-poppins font-medium text-sm md:text-[16px] text-[#84829A]'>24 people going</p>
                             </div>
                             <Icon icon="system-uicons:heart" style={{ color: "#4152CA" }} className='h-7 w-7' />
                         </div>
@@ -53,10 +52,7 @@ const Booking = () => {
 
                 </div>
 
-                <div className='min-w-[263px] min-h-[129px] rounded-[18px] shadow-md bg-[#FFFFFF] 
-                absolute z-10 bottom-[6.7rem] right-[0rem]
-
-            '>
+                <div className='min-w-[263px] min-h-[129px] rounded-[18px]  shadow-md bg-[#FFFFFF] absolute z-10 lg:bottom-[6.7rem] lg:right-[0rem] bottom-[7rem] right-[6.4rem] md:block hidden' >
                     <div className='flex gap-4 pt-[17px] px-[17px]'>
                         <img src="./image32.svg" alt="" className='rounded-full ' />
                         <div><p className='font-poppins font-normal text-[14px] text-[#84829A]'>Ongoing</p>
