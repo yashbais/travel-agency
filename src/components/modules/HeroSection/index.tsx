@@ -9,7 +9,7 @@ const Hero = () => {
 
                 <p className='text-[#181E4B] font-bold font-volkhov
                  text-[3.25rem] leading-[3.56rem] lg:text-[5.25rem] 
-                 lg:leading-[5.56rem]  '>
+                 lg:leading-[5.56rem] relative z-10'>
                     Travel, enjoy
                     and live a new
                     and full life</p>
@@ -17,7 +17,7 @@ const Hero = () => {
                     <img
                     src="./Decore-1.svg"
                     alt=""
-                    className="absolute lg:-right-8 
+                    className="absolute z-0 lg:-right-8 
                     lg:top-32 -right-20 top-[6.2rem]
                      hidden md:block 
                      

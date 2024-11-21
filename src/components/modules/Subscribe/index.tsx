@@ -28,7 +28,7 @@ const Subscribe = () => {
                             className="
         text-[#39425D] font-montserrat font-normal text-[14px]
         md:h-[68px] md:w-[421px] rounded-[10px] pl-[48px] pr-[16px]
-        h-[48px] sm:w-[321px] w-[201px]
+        h-[48px] sm:w-[321px] w-[201px] 
 
         placeholder:text-[#39425D] placeholder:font-montserrat 
         placeholder:font-normal placeholder:text-[14px]

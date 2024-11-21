@@ -26,12 +26,12 @@ const Booking = () => {
                 <div className=' lg:min-w-[370px] min-h-[400px] rounded-[24px] shadow-md absolute z-10 bg-[#FFFFFF]  lg:right-28 lg:top-16 flex flex-col gap-[26px] px-[25px] py-[20px] items-center'>
                     <img src={rome} alt="" />
 
-                    <div className=' lg:w-full justify-between'>
+                    <div className=' w-full justify-between  '>
                         <div className='flex flex-col gap-[13px]'>
                             <p className='text-[#080809] font-poppins font-medium text-sm md:text-lg'>Trip To Greece</p>
                             <div className='text-[#84829A] flex  text-sm md:text-[16px] font-poppins font-medium gap-1'>
                                 <p >14-29 June</p>
-                                <span className='h-[16px] min-w-1 md:block hidden'>1</span>
+                                <span className="h-[16px] min-w-[2px] bg-[#84829A] md:block hidden"></span>
                                 <p>by Robbin joseph</p>
                             </div>
                         </div>
