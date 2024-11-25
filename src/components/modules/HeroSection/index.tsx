@@ -1,6 +1,6 @@
 import Traveller from '../../../assets/Traveller.png';
 import { motion } from 'framer-motion';
-import {itemVariant ,containerVariant,diagonalItemVariant} from '../../../styles/animationVariants'
+import {itemVariant ,containerVariant,diagonalItemVariant} from '../../../styles/animation/animationVariants'
 
 const Hero = () => {
 

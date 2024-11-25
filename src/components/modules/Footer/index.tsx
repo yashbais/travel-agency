@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react'
 import React from 'react'
 import { motion } from 'framer-motion';
-import { containerVariant, cardVariant, itemVariant } from '../../../styles/animationVariants'
+import { containerVariant, cardVariant, itemVariant } from '../../../styles/animation/animationVariants'
 
 
 const Footer = () => {

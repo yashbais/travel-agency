@@ -5,7 +5,7 @@ import BlurryEffect from '../../../assets/BlurryEffect.png'
 import rome from '../../../assets/rome.png'
 import { Icon } from '@iconify/react'
 import { motion } from 'framer-motion';
-import { itemVariant, containerVariant,imageVariant } from '../../../styles/animationVariants'
+import { itemVariant, containerVariant,imageVariant } from '../../../styles/animation/animationVariants'
 
 
 const Booking = () => {

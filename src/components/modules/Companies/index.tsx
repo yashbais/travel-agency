@@ -2,7 +2,7 @@ import React from 'react'
 import { companiesImages } from '../../../mock/mock'
 import { companiesImagesTypes } from '../../../types/types'
 import { motion } from 'framer-motion';
-import { containerVariant, cardVariant } from '../../../styles/animationVariants'
+import { containerVariant, cardVariant } from '../../../styles/animation/animationVariants'
 
 
 const Companies = () => {

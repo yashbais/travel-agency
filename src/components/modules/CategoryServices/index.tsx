@@ -2,7 +2,7 @@ import React from 'react'
 import CategoryCard from './CategoryCard'
 import { servicesCard } from '../../../mock/mock'
 import { motion } from 'framer-motion';
-import { itemVariant, containerVariant, cardVariant } from '../../../styles/animationVariants'
+import { itemVariant, containerVariant, cardVariant } from '../../../styles/animation/animationVariants'
 
 const CategoryServices = () => {
     return (
