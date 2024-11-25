@@ -1,16 +1,23 @@
 import { Icon } from '@iconify/react'
 import React from 'react'
+import { motion } from 'framer-motion';
+import { containerVariant, cardVariant, itemVariant } from '../../../styles/animationVariants'
+
 
 const Footer = () => {
     return (
         <>
-            <div className='mt-[96px] grid grid-cols-12 gap-4'>
-                <div className='col-span-12 lg:col-span-3 gap-[19px] flex flex-col w-full md:w-[207px]'>
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                variants={containerVariant}
+                className='mt-[96px] grid grid-cols-12 gap-4'>
+                <motion.div variants={cardVariant} className='col-span-12 lg:col-span-3 gap-[19px] flex flex-col w-full md:w-[207px]'>
                     <h3 className='m-0 text-[#181E4B] font-normal font-poppins text-[44px]'>Jadoo.</h3>
                     <p className='text-[#5E6282] text-[13px] font-poppins font-normal'>Book your trip in minute, get full control for much longer.</p>
-                </div>
+                </motion.div>
 
-                <div className='col-span-12 lg:col-span-6 grid grid-cols-3 gap-3 text-nowrap'>
+                <motion.div variants={cardVariant} className='col-span-12 lg:col-span-6 grid grid-cols-3 gap-3 text-nowrap'>
                     <div className='flex flex-col gap-[34px]'>
                         <p className='text-[#080809] font-bold text-md sm:text-[21px] font-poppins'>Company</p>
                         <ul className='text-[#5E6282] font-poppins font-normal text-sm md:text-[18px] flex flex-col gap-[13px]'>
@@ -35,9 +42,9 @@ const Footer = () => {
                             <li>Low fare tips</li>
                         </ul>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className='col-span-12 lg:col-span-3 flex flex-col gap-[30px]'>
+                <motion.div variants={cardVariant} className='col-span-12 lg:col-span-3 flex flex-col gap-[30px]'>
                     <div className='flex justify-start gap-[25px]'>
                         <span className='p-[17px] rounded-full shadow-md'>
                             <Icon icon="ri:facebook-fill" width="1.2rem" height="1.2rem" style={{ color: "black" }} />
@@ -81,9 +88,16 @@ const Footer = () => {
                             </div>
                         </button>
                     </div>
-                </div>
-            </div>
-            <p className='text-center text-[#5E6282] text-[14px] font-normal font-poppins mt-[84px] mb-[79px]'>All rights reserved@jadoo.co</p>
+                </motion.div>
+            </motion.div>
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                variants={containerVariant}
+                >
+
+            <motion.p variants={itemVariant} className='text-center text-[#5E6282] text-[14px] font-normal font-poppins mt-[84px] mb-[79px]'>All rights reserved@jadoo.co</motion.p>
+            </motion.div>
         </>
     )
 }

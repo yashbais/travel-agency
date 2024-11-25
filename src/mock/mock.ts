@@ -8,12 +8,12 @@ import {
 export const servicesCard: servicesCardTypes[] = [
   {
     title: "Calculated Weather",
-    content: "Built Wicket longer admire do barton vanity itself do in it.",
+    content: "Built Wicket longer admire do barton vanity itself do in it. ",
     iconImage: "./sattellite.svg",
   },
   {
     title: "Best Flights",
-    content: "Engrossed listening. Park gate sell they west hard for the.",
+    content: "Engrossed listening. Park gate sell they west hard for the. ",
     iconImage: "./airoplane.svg",
   },
   {

@@ -1,22 +1,31 @@
 import { Icon } from '@iconify/react'
 import React from 'react'
+import { motion } from 'framer-motion';
+import { itemVariant, containerVariant,imageVariant } from '../../../styles/animationVariants'
+
 
 const Subscribe = () => {
     return (
-        <div className='relative h-[490px]' >
-            <div className='mt-[124px] h-[407px] bg-[#DFD7F9] 
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            variants={containerVariant}
+            className='relative h-[490px]' >
+            <div  className='mt-[124px] h-[407px] bg-[#DFD7F9] 
         rounded-tr-[20px] rounded-tl-[129px] rounded-br-[20px]
          rounded-bl-[20px] relative flex flex-col justify-evenly items-center'>
 
-                <p className='font-poppins text-center
+                <motion.p
+                variants={itemVariant}
+                 className='font-poppins text-center
             lg:w-[881px] lg:h-[108px] 
              sm:w-[500px] h-[108px]
              w-[250px] 
              leading-[24px]
             font-semibold lg:text-[33px] md:text-2xl text-md md:leading-[54px] text-[#5E6282]'>Subscribe to get information, latest news and other
-                    interesting offers about Jadoo</p>
+                    interesting offers about Jadoo</motion.p>
 
-                <div className="flex gap-[24px] items-center md:flex-row  flex-col">
+                <motion.div variants={itemVariant} className="flex gap-[24px] items-center md:flex-row  flex-col">
                     <div className="relative">
                         <Icon
                             icon="mdi-light:email"
@@ -45,19 +54,19 @@ const Subscribe = () => {
                     >
                         Subscribe
                     </button>
-                </div>
+                </motion.div>
 
 
-                <img src="./sendIcon.svg" alt="" className='absolute -right-5 -top-5 z-10' />
-                <img src="./leftSpiral.svg" alt="" className='absolute right-0 z-0 hidden md:block' />
-                <img src="./centerSpiral.svg" alt="" className='absolute -left-20 bottom-0 hidden md:block' />
+                <motion.img variants={imageVariant} src="./sendIcon.svg" alt="" className='absolute -right-5 -top-5 z-10' />
+                <motion.img variants={imageVariant} src="./leftSpiral.svg" alt="" className='absolute right-0 z-0 hidden md:block' />
+                <motion.img variants={itemVariant} src="./centerSpiral.svg" alt="" className='absolute -left-20 bottom-0 hidden md:block' />
 
             </div>
             <img src="./GroupStars.svg" alt="" className=' 
             absolute -right-[7rem] top-[22rem] lg:block hidden
             rotate-90 h-[166px] w-[153px]' />
 
-        </div>
+        </motion.div>
 
     )
 }
