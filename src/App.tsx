@@ -1,12 +1,12 @@
 
-import Landing from "./pages/Landing"
+import Router from './Router'
 
 function App() {
+
   return (
-    <div >
-      <Landing/>
-     
-    </div>
+    <>
+      <Router/>
+    </>
   );
 }
 

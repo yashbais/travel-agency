@@ -1,23 +1,16 @@
-import React from 'react'
-import NavLayout from "../components/layouts/NavLayout"
 import AppLayout from "../components/layouts/AppLayout"
-import Navbar from '../components/modules/Navbar/index'
-import Hero from '../components/modules/HeroSection/index'
-import CategoryServices from '../components/modules/CategoryServices/index'
-import Destinations from '../components/modules/Destinations/index'
-import Companies from '../components/modules/Companies/index'
-import Subscribe from '../components/modules/Subscribe/index'
-import Footer from '../components/modules/Footer/index'
-import Booking from '../components/modules/Booking/index'
+import Hero from '../components/modules/HeroSection'
+import CategoryServices from '../components/modules/CategoryServices'
+import Destinations from '../components/modules/Destinations'
+import Companies from '../components/modules/Companies'
+import Subscribe from '../components/modules/Subscribe'
+import Footer from '../components/modules/Footer'
+import Booking from '../components/modules/Booking'
 
 const Landing = () => {
     return (
-        <div>
+        <div >
             <div className="relative ">
-                <NavLayout >
-                    <Navbar />
-                </NavLayout>
-
                 <img src="./Decore.svg" alt="" className="h-[42.53rem] w[38.89rem]
            absolute right-0 -top-12 hidden xl:block" />
             </div>
@@ -36,6 +29,7 @@ const Landing = () => {
 
 
         </div>
+   
     )
 }
 
