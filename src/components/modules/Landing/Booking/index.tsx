@@ -1,11 +1,11 @@
 import React from 'react'
 import BookingCard from './BookingCard'
-import { bookingCard } from '../../../mock/mock'
-import BlurryEffect from '../../../assets/BlurryEffect.png'
-import rome from '../../../assets/rome.png'
+import { bookingCard } from '../../../../mock/mock'
+import BlurryEffect from '../../../../assets/BlurryEffect.png'
+import rome from '../../../../assets/rome.png'
 import { Icon } from '@iconify/react'
 import { motion } from 'framer-motion';
-import { itemVariant, containerVariant,imageVariant } from '../../../styles/animation/animationVariants'
+import { itemVariant, containerVariant,imageVariant } from '../../../../styles/animation/animationVariants'
 
 
 const Booking = () => {

@@ -1,8 +1,9 @@
 import React from 'react'
+import AppLayout from '../components/layouts/AppLayout'
 
 const Bookings = () => {
   return (
-    <div>Bookings</div>
+    <AppLayout>Bookings</AppLayout>
   )
 }
 

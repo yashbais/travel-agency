@@ -1,11 +1,11 @@
 import AppLayout from "../components/layouts/AppLayout"
-import Hero from '../components/modules/HeroSection'
-import CategoryServices from '../components/modules/CategoryServices'
-import Destinations from '../components/modules/Destinations'
-import Companies from '../components/modules/Companies'
-import Subscribe from '../components/modules/Subscribe'
+import Hero from '../components/modules/Landing/HeroSection'
+import CategoryServices from '../components/modules/Landing/CategoryServices'
+import Destinations from '../components/modules/Landing/Destinations'
+import Companies from '../components/modules/Landing/Companies'
+import Subscribe from '../components/modules/Landing/Subscribe'
 import Footer from '../components/modules/Footer'
-import Booking from '../components/modules/Booking'
+import Booking from '../components/modules/Landing/Booking'
 
 const Landing = () => {
     return (

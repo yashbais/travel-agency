@@ -6,7 +6,7 @@ export interface AppLayoutProps {
 
 const AppLayout: React.FC<AppLayoutProps>  = ({children}) => {
   return (
-    <div className='xl:mx-[9.25rem] mx-[3rem] lg:my-2  my-10 absolute z-0 top-[7rem] '>{children}</div>
+    <div className='xl:mx-[9.25rem] mx-[3rem] lg:my-2  my-10 absolute z-0 top-[6.3rem] '>{children}</div>
   )
 }
 

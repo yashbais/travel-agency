@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react'
 import React from 'react'
 import { motion } from 'framer-motion';
-import { itemVariant, containerVariant,imageVariant } from '../../../styles/animation/animationVariants'
+import { itemVariant, containerVariant,imageVariant } from '../../../../styles/animation/animationVariants'
 
 
 const Subscribe = () => {

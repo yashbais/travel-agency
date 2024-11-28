@@ -1,5 +1,5 @@
 import React from 'react'
-import { servicesCardTypes } from '../../../types/types'
+import { servicesCardTypes } from '../../../../types/types'
 
 const CategoryCard = (
     { title, content, iconImage }: servicesCardTypes

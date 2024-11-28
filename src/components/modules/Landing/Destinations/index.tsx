@@ -1,8 +1,8 @@
 import React from 'react'
-import DestinationCard from '../Destinations/DestinationCard'
-import { destinationCard } from '../../../mock/mock'
+import DestinationCard from './DestinationCard'
+import { destinationCard } from '../../../../mock/mock'
 import { motion } from 'framer-motion';
-import { itemVariant, containerVariant, cardVariant } from '../../../styles/animation/animationVariants'
+import { itemVariant, containerVariant, cardVariant } from '../../../../styles/animation/animationVariants'
 
 
 const Destinations = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import {bookingCardTypes} from '../../../types/types'
+import {bookingCardTypes} from '../../../../types/types'
 
 const BookingCard = ({title,content,iconImage}:bookingCardTypes) => {
   return (

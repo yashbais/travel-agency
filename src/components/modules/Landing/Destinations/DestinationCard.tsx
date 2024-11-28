@@ -1,6 +1,6 @@
 import { Icon } from '@iconify/react';
 import React from 'react';
-import { destinationCardTypes } from '../../../types/types'
+import { destinationCardTypes } from '../../../../types/types'
 
 const DestinationCard = ({ amount, country, Image, Trip }: destinationCardTypes) => {
     return (
