@@ -1,9 +1,10 @@
 import { Icon } from "@iconify/react";
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import {useToggleState} from '../../../hooks/useToogleState'
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useToggleState(false);
 
   return (
     <nav className="flex justify-between md:gap-[0.875rem] lg:gap-[2.875rem] xl:gap-[13.875rem] items-center md:px-0 
@@ -37,7 +38,7 @@ const Navbar = () => {
        {/* Mobile Menu Icon */}
        <button
          className="block lg:hidden"
-         onClick={() => setIsMenuOpen(!isMenuOpen)}
+         onClick={setIsMenuOpen}
        >
          <Icon icon="mdi:menu" className="w-6 h-6" />
        </button>
